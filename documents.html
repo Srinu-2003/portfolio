@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documents — Srinivas Bandi</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg class="bg-grid" id="bgGrid" aria-hidden="true"></svg>
+<a class="doc-back" href="index.html">&larr; back to portfolio</a>
+
+<div class="doc-shell">
+
+  <!-- LOCK SCREEN -->
+  <div id="lockScreen" class="lock">
+    <span class="lock-icon">🔒</span>
+    <h1>Private documents</h1>
+    <p class="sub">Enter the password to view files that aren't part of the public portfolio.</p>
+
+    <form id="lockForm" class="lock-form" autocomplete="off">
+      <div style="flex:1;">
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" required autocomplete="current-password">
+      </div>
+      <button type="submit" style="align-self:flex-end;">Unlock</button>
+    </form>
+    <p id="lockError" class="lock-error" role="alert"></p>
+
+    <p class="lock-note">
+      This screen only hides the link — it doesn't encrypt the files. On most static
+      hosts, anyone with the exact file URL can open it directly. Keep anything
+      genuinely sensitive out of <code>assets/private/</code>, or password-protect
+      the files themselves too. See <code>README.md</code> for details.
+    </p>
+  </div>
+
+  <!-- UNLOCKED DOCUMENT LIST -->
+  <div id="docPanel" class="doc-hidden">
+    <p class="eyebrow-num" style="text-align:left;">private</p>
+    <h2 class="head" style="margin-bottom:20px;">Documents</h2>
+
+    <div class="doc-list" id="docList">
+      <!-- Fixed rows. Add or edit these directly, or use "Add a document" below instead. -->
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Resume — full version</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/resume-full.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>SSC (10th) certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/certificate-10th.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Intermediate (12th) certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/certificate-inter.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>B.Tech provisional certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/pc-btech.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>M.Tech provisional certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/pc-mtech.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Consolidated marks memo (CMM)</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/cmm.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Academic transcripts</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/transcripts.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Study certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/study-certificate.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Conduct certificate</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/conduct-certificate.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Internship certificates</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/certificates.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Scholarship &amp; award letters</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/scholarship-letters.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Workshop &amp; seminar certificates</h3>
+          <p class="filemeta">PDF · replace with your file</p>
+        </div>
+        <a class="dl" href="assets/private/workshop-certificates.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Aadhaar card</h3>
+          <p class="filemeta">PDF · government ID — see note below</p>
+        </div>
+        <a class="dl" href="assets/private/aadhaar-card.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>PAN card</h3>
+          <p class="filemeta">PDF · government ID — see note below</p>
+        </div>
+        <a class="dl" href="assets/private/pan-card.pdf" download>Download</a>
+      </div>
+
+      <div class="doc-row">
+        <div class="meta">
+          <h3>Passport</h3>
+          <p class="filemeta">PDF · government ID — see note below</p>
+        </div>
+        <a class="dl" href="assets/private/passport.pdf" download>Download</a>
+      </div>
+    </div>
+
+    <!-- Rows added through the form below render here, remembered in this browser only -->
+    <div class="doc-list doc-list-custom doc-hidden" id="docListCustom"></div>
+
+    <!-- Add-a-document form: no coding needed for one-off additions -->
+    <details class="add-doc">
+      <summary>+ Add a document (no limit — add as many as you want)</summary>
+      <form id="addDocForm" class="add-doc-form" autocomplete="off">
+        <div>
+          <label for="docTitle">Document name</label>
+          <input type="text" id="docTitle" placeholder="e.g. Offer letter" required>
+        </div>
+        <div>
+          <label for="docFile">File name in assets/private/</label>
+          <input type="text" id="docFile" placeholder="e.g. offer-letter.pdf" required>
+        </div>
+        <button type="submit">Add row</button>
+      </form>
+      <p class="add-doc-hint">
+        There's no cap here — submit this form as many times as you need, whenever a new
+        document comes up, and each one gets its own row underneath the fixed list above.
+        This only adds the row you see here — it doesn't upload anything. Put the actual
+        file in <code>assets/private/</code> with the file name you type above, and this
+        link will work. Rows you add here are remembered on this browser only (not
+        visible to other visitors, and not synced anywhere) — edit
+        <code>documents.html</code> directly instead if you want a row everyone who
+        unlocks the page will see.
+      </p>
+    </details>
+
+    <p class="lock-note">
+      Aadhaar, PAN, and passport are worth protecting harder than the rest — if that link
+      ever leaked, it's identity-theft material, not just an inconvenience. Consider
+      password-protecting those three PDFs individually (real encryption on the file
+      itself) rather than relying on this login screen alone. See the README.
+    </p>
+
+    <p style="margin-top:20px;">
+      <button type="button" id="lockAgain" class="btn" style="cursor:pointer;">Lock again</button>
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="documents.js"></script>
+</body>
+</html>

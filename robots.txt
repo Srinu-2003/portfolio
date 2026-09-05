@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /documents.html
+Disallow: /assets/private/
+Disallow: /generate-hash.html
